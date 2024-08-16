@@ -1,0 +1,25 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 380px;
+  
+    @media screen and (max-width:425px) {
+      flex-wrap: nowrap;
+      height: 790px;
+      button{
+          order: 4;
+        }
+        .numbers{
+          order: 5;
+        }
+    }
+  
+  
+  
+    .numbers{
+      display: flex;
+      justify-content: space-between;
+    }
+  }

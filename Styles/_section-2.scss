@@ -1,0 +1,27 @@
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 425px) {
+    overflow: scroll;
+    padding: 20px;
+    gap: 20px;
+  }
+  .card-one {
+    display: block;
+    @media screen and (max-width: 425px) {
+      flex-shrink: 0;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+      .bottom-card{
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 30%;
+        }
+      }
+    }
+  }
+}
